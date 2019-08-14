@@ -23,8 +23,7 @@ def load_image(fpath):
     print(normalizedImg)
 
     # creates window and displays given image to test scaling 
-    window = cv2.namedWindow('Display', cv2.WINDOW_AUTOSIZE)
-    cv2.imshow(window, normalizedImg)
+    cv2.imshow('CT Slice', normalizedImg)
     cv2.waitKey(delay=0)
     cv2.destroyAllWindows()
 
