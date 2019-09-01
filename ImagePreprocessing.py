@@ -123,6 +123,7 @@ def load_all_patients(all_patients_path):
         key_slice = int(patient_list[i, 1])
         if os.path.exists(pat_folder):
             preprocessed_patients.append(stack_slices(pat_folder, key_slice))
+    print('All available patient images have been processed')
 
 load_all_patients('/Users/krishmoran/Documents/LungClassification/Images2_png')
 
