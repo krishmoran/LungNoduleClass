@@ -5,6 +5,7 @@ import time, sys
 import pandas as pd
 
 # Constants
+input_all_patients = '/Users/krishmoran/Documents/LungClassification/Images2_png'
 input_patient_folder = '/Users/krishmoran/Documents/LungClassification/Krish/SamplePatients/Patient_4274'
 slice_info = '/Users/krishmoran/Downloads/DL_info.csv'
 
@@ -126,8 +127,8 @@ def load_all_patients(all_patients_path):
     print('All available patient images have been processed')
     return preprocessed_patients
 
-# to test, enter path of folder with multiple patient folders inside 
-# load_all_patients('/Users/krishmoran/Documents/LungClassification/Images2_png')
+# to test, enter path of folder with multiple patient folders inside (constant at the top)
+load_all_patients(input_all_patients)
 
 
 
